@@ -1,1 +1,40 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #24445f
+        );
+
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    width: min(96vw, 1100px);
+    height: auto;
+
+    border: 5px solid #08111c;
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 55px
+        rgba(0, 0, 0, 0.55);
+
+    background: #bceaff;
+
+    image-rendering: pixelated;
+    cursor: pointer;
+}
