@@ -124,7 +124,7 @@ const jogador = {
 
     atacando: false,
     tempoAtaque: 0,
-    duracaoAtaque: 20,
+    duracaoAtaque: 10,
     numeroDoAtaque: 0,
 
     frameCorrida: 0,
@@ -610,8 +610,8 @@ function verificarAtaques() {
     }
 
     const golpeAtivo =
-        jogador.tempoAtaque <= 15 &&
-        jogador.tempoAtaque >= 5;
+        jogador.tempoAtaque <= 9 &&
+        jogador.tempoAtaque >= 3;
 
     if (!golpeAtivo) {
         return;
@@ -626,7 +626,7 @@ function verificarAtaques() {
         direita:
             jogador.x +
             jogador.largura +
-            70,
+            90,
 
         topo:
             jogador.y + 5,
