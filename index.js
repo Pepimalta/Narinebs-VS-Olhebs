@@ -361,7 +361,7 @@ function pular() {
     }
 
     if (jogador.saltosUsados === 3) {
-        jogador.velocidadeY = -9;
+        jogador.velocidadeY = -10.0;
     }
 
     jogador.noChao = false;
